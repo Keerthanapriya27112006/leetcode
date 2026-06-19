@@ -1,0 +1,9 @@
+class Solution:
+    def isPalindrome(self, head):
+        nums = []
+
+        while head:
+            nums.append(head.val)
+            head = head.next
+
+        return nums == nums[::-1]
